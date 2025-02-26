@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Миссия Колонизация Марса</h1>
+    </head>
+    <body>
+        <h4>И на Марсе будут яблони цвести!</h4>
+    </body>
+<body>
+{% set engineers = ['инженер', 'строитель', 'чертёжник'] %}
+ {% if prof in engineers %}
+        <center>
+            <h2>Инженерные тренажеры</h2>
+            <img src="/static/img/image1.png"
+                alt="здесь должна была быть картинка, но не нашлась">
+        </center>
+ {% else %}
+        <center>
+            <h2>Научные симуляторы</h2>
+            <img src="/static/img/image.png"
+                alt="здесь должна была быть картинка, но не нашлась">
+        </center>
+ {% endif %}
+</body>
+</html>
